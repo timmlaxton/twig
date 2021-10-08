@@ -10,4 +10,9 @@ describe("elementsInArray", function () {
       [7, 8, 9],
     ]);
   });
+
+  it("should return 2 arrays of length 2 and 1 array of length 1 checking a remainder of > 0.5", function () {
+    const actual = elementsInArray([1, 2, 3, 4, 5], 3);
+    assert.deepStrictEqual(actual, [[1, 2], [3, 4], [5]]);
+  });
 });
